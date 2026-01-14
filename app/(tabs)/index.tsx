@@ -1,12 +1,14 @@
+import profile from '@/assets/images/emma.jpeg'
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 const index = () => {
   return (
     <SafeAreaView>
-      <View style={styles.container}>
-        <Text style={styles.text}>This is my first App</Text>
+      {/* profile picture */}
+      <View>
+        <Image source={profile} className="w-[15rem] h-[15rem] rounded-full" />
       </View>
     </SafeAreaView>
   )
